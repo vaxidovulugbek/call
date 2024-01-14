@@ -1,0 +1,195 @@
+@import '../../assets/styles/varables';
+
+.modal {
+    position: fixed;
+    //overflow: hidden;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+
+    color: $inputText  !important;
+
+    /* align-items: center; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    z-index: 1500;
+    background: rgba(25, 25, 35, 0.5);
+    opacity: 0.6;
+}
+
+.mx-modal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    max-height: calc(100% - 50px);
+    position: relative;
+    z-index: 4000;
+    max-width: 1190px;
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-content {
+    position: relative;
+}
+
+
+.modal-row {
+    row-gap: 20px;
+}
+
+/* Modal Select */
+
+.field-container {
+    width: 100%;
+}
+
+.modal-select {
+    width: 100%;
+
+    &__menu {
+        z-index: 20;
+
+        ::-webkit-scrollbar {
+            // display: none;
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #00000030;
+            border-radius: 10px;
+        }
+    }
+
+    &__control {
+        background: #fff !important;
+        border: 1px solid $inputText  !important;
+        border-radius: 4px !important;
+        min-height: 50px !important;
+        min-width: 140px;
+    }
+
+    &__input-container,
+    &__single-value,
+    &__placeholder {
+        padding: 0;
+        font-family: SFProDisplay;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $inputText  !important;
+    }
+
+    &__indicator-separator {
+        display: none;
+    }
+}
+
+
+.textarea .form-group {
+    width: 100%;
+}
+
+#modal-loader {
+    width: 80vh;
+    max-width: 1190px;
+    height: 80vh;
+    position: relative;
+
+    .loader {
+        font-size: 80px;
+    }
+}
+
+.pluginsModall {
+    padding: 40px 80px 32px 80px;
+    position: relative;
+    width: 800px;
+    height: 560px;
+    background: #fff;
+}
+
+.settingsModall {
+    padding: 50px 80px 32px 80px;
+    position: relative;
+    width: 800px;
+    height: 560px;
+    background: #fff;
+    &__text {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #052549;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__list {
+        width: 100%;
+        max-height: 560px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        width: 305px;
+        margin: 0 !important;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        padding: 26px 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px -5px #000000;
+        border-radius: 15px;
+        width: 100%;
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #052549;
+        }
+        img {
+            width: 30px;
+            height: 28px;
+            margin-right: 16px;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 36px;
+    }
+
+    &__subtext {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #052549;
+        margin-bottom: 40px;
+    }
+    
+}

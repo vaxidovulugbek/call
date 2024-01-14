@@ -1,0 +1,131 @@
+.plugins {
+  font-family: 'SF Pro Display';
+  margin: 50px 50px 30px 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 6px rgba(0, 51, 108, 0.05);
+  border-radius: 6px;
+  height: calc(100vh - 160px);
+  overflow: hidden;
+  position: relative;
+
+  &-title {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #052549;
+    padding: 30px;
+    cursor: default;
+    border-bottom: 2px solid #F1F3F4;
+  }
+
+  &__content {
+    display: flex;
+    height: calc(100% - 90px);
+  }
+
+  &__info {
+    width: 290px;
+    padding: 20px;
+    border-right: 2px solid #F1F3F4 ;
+    height: 100%;
+  }
+
+  &__info-text {
+    margin: 20px 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #052549;
+  }
+
+  &__info-card {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #385999;
+    border: 1.5px solid #0077FF;
+    box-shadow: 0px 3px 6px rgba(0, 51, 108, 0.05);
+    border-radius: 6px;
+    padding: 4px 0 15px 0px;
+    margin-bottom: 20px;
+  }
+
+  &__info-btn {
+    font-family: 'SF Pro Display';
+    padding: 4px 37px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+  }
+
+  &__info-subcard {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #F6F6F6;
+    box-shadow: 0px 3px 6px rgba(0, 51, 108, 0.05);
+    border-radius: 6px;
+    padding: 4px 0 15px 0px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 40px);
+    // height: max-content;
+    // height: auto;
+    margin: 20px 19px 20px 20px;
+    gap: 20px;
+    overflow-y: scroll;
+    z-index: 1;
+  }
+
+  // &__cards::-webkit-scrollbar {
+  //   background: #F1F3F4 !important;
+  //   background-color: #F1F3F4 !important;
+  //   margin-left: 5px !important;
+  //   position: relative !important;
+  //   left: 10px !important;
+  // }
+
+  // &__cards::-webkit-scrollbar-thumb {
+  //   background: #F1F3F4 !important;
+  //   background-color: #F1F3F4 !important;
+  //   margin: 0 5px  !important;
+  //   position: relative !important;
+  //   left: 10px !important;
+  // }
+
+  &__content-card {
+    width: 250px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #F6F6F6;
+    box-shadow: 0px 3px 6px rgba(0, 51, 108, 0.05);
+    border-radius: 6px;
+    padding: 4px 0 15px 0px;
+  }
+
+  &__call {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+  }
+}
+

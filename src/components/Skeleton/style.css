@@ -1,0 +1,83 @@
+.skeleton-placeholder {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eff8ff), color-stop(18%, #f5fbff), color-stop(33%, #eff8ff));
+  background: linear-gradient(to right, #eff8ff 8%, #f5fbff 18%, #eff8ff 33%);
+  background-size: 800px 104px;
+  position: relative;
+  content: "";
+}
+
+.skeleton-placeholder.w-80 {
+  width: 80%;
+}
+
+.skeleton-placeholder.w-40 {
+  width: 40%;
+}
+
+.skeleton-placeholder.w-100 {
+  width: 100%;
+}
+
+.skeleton-placeholder.h-100 {
+  height: 100%;
+}
+
+.skeleton-placeholder.h-18px {
+  height: 16px;
+}
+
+.skeleton-placeholder.h-16px {
+  height: 16px;
+}
+
+.skeleton-placeholder.h-12px {
+  height: 12px;
+}
+
+.skeleton-placeholder.br-0 {
+  border-radius: 0;
+}
+
+.p-abs {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.p-rel {
+  position: relative;
+}
+
+.min-h-300 {
+  min-height: 300px;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

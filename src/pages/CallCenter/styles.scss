@@ -1,0 +1,23 @@
+.call-center {
+	.table-container {
+		max-height: 600px;
+		overflow-y: scroll;
+		padding: 0 1px;
+
+		thead {
+			position: sticky;
+			top: 0;
+			z-index: 1;
+			width: 100%;
+		}
+
+		tbody {
+			width: 100%;
+		}
+	}
+
+
+	.table-container::-webkit-scrollbar {
+		display: none;
+	}
+}

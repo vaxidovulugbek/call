@@ -1,0 +1,222 @@
+$info: #0091ff;
+$warning: #ffb822;
+$success: #34bfa3;
+$danger: #f4516c;
+$metal: #dcdcdc;
+
+.btn{
+  white-space: nowrap;
+  padding: 14px 30px;
+  cursor: pointer;
+  outline: none;
+  transition: .2s ease;
+  font-size: 16px;
+  min-width: 190px;
+
+  &.btn-sm{
+    padding: 8px 25px;
+    font-size: 12px;
+  }
+  &.btn-es{
+    font-size: 12px;
+    padding: 3px 20px;
+  }
+  &.btn-xs{
+    font-size: 12px;
+    padding: 3px 20px;
+  }
+  &.btn-lg{
+    padding: 12px 90px;
+  }
+
+  &.btn-solid{
+    color: #ffffff;
+    &.loading{
+      position: relative;
+      color: transparent!important;
+      &:after{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid transparent;
+        border-top-color: #ffffff;
+        -webkit-animation: 1s spin linear infinite;
+        animation: .8s spin linear infinite;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+    &:disabled{
+      opacity: .6;
+      cursor: no-drop;
+    }
+    &.btn-info{
+      background-color: $info;
+      border: 1px solid $info;
+      &:hover{background-color: #2da4ff; border: 1px solid #2da4ff;}
+      &:disabled{
+        background-color: $info;
+        border: 1px solid $info;
+      }
+    }
+    &.btn-warning{
+      background-color: $warning;
+      border: 1px solid $warning;
+      &:hover{background-color: #df9f16; border: 1px solid #df9f16;}
+      &:disabled{
+        background-color: $warning;
+        border: 1px solid $warning;
+      }
+    }
+    &.btn-success {
+      background-color: $success;
+      border: 1px solid $success;
+      &:hover{background-color: #28a58c; border: 1px solid #28a58c;}
+      &:disabled{
+        background-color: $success;
+        border: 1px solid $success;
+      }
+    }
+    &.btn-danger{
+      background-color: $danger;
+      border: 1px solid $danger;
+      &:hover{background-color: #d91f3e; border: 1px solid #d91f3e;}
+      &:disabled{
+        background-color: $danger;
+        border: 1px solid $danger;
+      }
+    }
+    &.btn-metal{
+      background-color: $metal;
+      border: 1px solid $metal;
+      color: #404040;
+      &:hover{background-color: #c8c4c4; border: 1px solid #c8c4c4;}
+      &:disabled{
+        background-color: $metal;
+        border: 1px solid $metal;
+        color: #404040;
+      }
+    }
+  }
+
+  &.btn-outline{
+    color: #ffffff;
+    background: transparent;
+    &.loading{
+      position: relative;
+      color: transparent!important;
+      &:after{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid transparent;
+        -webkit-animation: 1s spin linear infinite;
+        animation: .8s spin linear infinite;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+    &:disabled{
+      opacity: .6;
+      cursor: no-drop;
+    }
+    &.btn-info{
+      border: 1px solid $info;
+      color: $info;
+      &.loading{
+        &:after{
+          border-top-color: $info;
+        }
+      }
+      &:hover{background-color: $info; color: #ffffff;}
+      &:disabled{
+        border: 1px solid $info;
+        color: $info;
+        background-color: #ffffff;
+      }
+    }
+    &.btn-warning{
+      border: 1px solid $warning;
+      color: $warning;
+      &.loading{
+        &:after{
+          border-top-color: $warning;
+        }
+      }
+      &:hover{background-color: $warning; color: #ffffff;}
+      &:disabled{
+        border: 1px solid $warning;
+        color: $warning;
+        background-color: #ffffff;
+      }
+    }
+    &.btn-success {
+      border: 1px solid $success;
+      color: $success;
+      &.loading{
+        &:after{
+          border-top-color: $success;
+        }
+      }
+      &:hover{background-color: $success; color: #ffffff;}
+      &:disabled{
+        border: 1px solid $success;
+        color: $success;
+        background-color: #ffffff;
+      }
+    }
+    &.btn-danger{
+      border: 1px solid $danger;
+      color: $danger;
+      &.loading{
+        &:after{
+          border-top-color: $danger;
+        }
+      }
+      &:hover{background-color: $danger; color: #ffffff;}
+      &:disabled{
+        border: 1px solid $danger;
+        color: $danger;
+        background-color: #ffffff;
+      }
+    }
+    &.btn-metal{
+      border: 1px solid $metal;
+      color: #404040;
+      &.loading{
+        &:after{
+          border-top-color: $metal;
+        }
+      }
+      &:hover{background-color: $metal; border-color: $metal;}
+      &:disabled{
+        border: 1px solid $metal;
+        color: #404040;
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,122 @@
+.donut-chart {
+  position: relative;
+}
+
+.donut-chart * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.donut-chart path {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.donut-chart .chart-wrapper {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.donut-chart .categories {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  row-gap: 15px;
+  -webkit-column-gap: 45px;
+          column-gap: 45px;
+}
+
+.donut-chart .categories .category {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B3BAC3;
+}
+
+.donut-chart .categories .category span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: var(--main-blue);
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 119, 255, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 119, 255, 0.2);
+}
+
+.donut-chart .categories .active {
+  color: var(--main-blue);
+}
+
+.donut-chart .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 57px 30px rgba(0, 51, 108, 0.05);
+          box-shadow: 0px 57px 30px rgba(0, 51, 108, 0.05);
+}
+
+.donut-chart .center h2 {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 50px;
+  color: #052549;
+  margin-right: -5px;
+}
+
+.donut-chart .center h2 .percant {
+  font-size: 20px;
+  margin-left: -10px;
+}
+
+.donut-chart .center p {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B3BAC3;
+}
+/*# sourceMappingURL=styles.css.map */

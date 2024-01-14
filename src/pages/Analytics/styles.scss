@@ -1,0 +1,9 @@
+.grid-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 34px;
+
+    @media (max-width: 1250px) {
+        display: block;
+    }
+}
